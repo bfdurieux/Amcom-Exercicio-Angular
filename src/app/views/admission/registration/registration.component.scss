@@ -1,0 +1,146 @@
+@import "variables";
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: .5rem;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: $navbar-height;
+  left: $menu-width;
+  height: calc(100% - $navbar-height);
+  width: calc(100% - $menu-width);
+  padding: 2rem;
+
+  background-color: $ailos-background;
+
+
+  .main__subtitle {
+    color: $ailos-gray-4;
+  }
+
+  &__search {
+    display: inline-flex;
+    align-items: center;
+
+    app-button {
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__cards {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.search-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepper {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content, .card-footer {
+  display: inline-flex;
+  align-items: center;
+  margin-top: .5rem;
+}
+  .card-footer>.material-icons {
+    color: $ailos-green;
+  }
+
+a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: $ailos-blue;
+}
+
+.material-icons {
+  color: $ailos-gray-4;
+  font-size: 3rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-size: 1.5rem;
+  font-family: "Open sans", serif;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: $ailos-gray-4;
+}
+
+
+.footer {
+  position: absolute;
+  height: $navbar-height;
+  width: calc(100% - $menu-width);
+  bottom: 0;
+  left: $menu-width;
+  background-color: $ailos-white;
+  display: inline-flex;
+  align-items: center;
+
+  app-button:first-child {
+    margin-left: 1rem;
+  }
+
+  app-button {
+    position: relative;
+    margin: .5rem;
+  }
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .info {
+    &__title {
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.sidebar-button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3rem;
+}
+
+.checkbox-list {
+  list-style: none;
+}
+
+.item-list {
+  margin-left: 4rem;
+  list-style: disc;
+  line-height: 2.5rem;
+}

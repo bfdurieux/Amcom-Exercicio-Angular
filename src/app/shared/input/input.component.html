@@ -1,0 +1,10 @@
+<div class="input-wrapper">
+  <label for="text-input">{{label}}</label>
+  <input type="text" id="text-input" class="text-input"
+         [inputMask]="inputMask"
+         [placeholder]="mask"
+         [ngClass]="state"
+         [(ngModel)]="inputValue"
+         (ngModelChange)="inputValueChange.emit(inputValue)">
+  <span *ngIf="state == 'errors'" class="error-text">{{validationText}}</span>
+</div>

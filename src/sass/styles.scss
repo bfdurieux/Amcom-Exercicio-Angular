@@ -1,0 +1,22 @@
+@import "variables";
+@import "button";
+
+*,
+*::after,
+*::before {
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: $ailos-background;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}

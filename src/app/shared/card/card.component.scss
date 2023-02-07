@@ -1,0 +1,13 @@
+@import "variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  width: 25rem;
+  padding: 2rem;
+  background-color: $ailos-white;
+  border: .1rem $ailos-gray-4 solid;
+  margin-right: 1.3rem;
+  margin-top: 2rem;
+}
