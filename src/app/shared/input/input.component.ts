@@ -11,14 +11,6 @@ export class InputComponent {
    get mask(): string {
      return this._mask;
    }
-   @Input()
-   set mask(value: string) {
-     this._mask = value;
-     let format = value.replaceAll('0', '9');
-     this.inputMask = createMask(format);
-     this.inputMask.autoUnmask = true;
-     this.inputMask.placeholder = value;
-   }
    inputMask: InputmaskOptions<string> = createMask({});
    @Input() label: string = '';
    @Input() state: 'valid' | 'errors' | 'none' = 'none';
