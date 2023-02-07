@@ -10,7 +10,7 @@
 
 # Como rodar:
 1. Navegar até o diretório do projeto utilizando o terminal de comando de sua preferência.
-2. Rodar o comando `npm i` para instalar os pacotes
+2. Rodar o comando `npm i` para instalar os pacotes (o pacote ngneat/input mask pode causar conflitos que podem ser resolvidos utilizando o comando `npm install --save --legacy-peer-deps`)
 3. Rodar o comando `ng serve --o`
 
 
